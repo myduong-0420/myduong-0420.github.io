@@ -132,7 +132,7 @@
   .project .chips{ margin-top:14px; display:flex; gap:6px; flex-wrap:wrap; }
   .chip{ font-size:11px; color:var(--graphite); background:var(--bg); border:1px solid var(--line); border-radius:4px; padding:3px 8px; }
 
-  /* ---------- sketches ---------- */
+  /* ---------- hobbies / sketch gallery ---------- */
   .sketch-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; align-items:start; }
   @media (max-width:640px){ .sketch-grid{ grid-template-columns:repeat(2, 1fr); } }
   .sketch{ position:relative; overflow:hidden; border-radius:5px; border:1px solid var(--line); margin:0; background:var(--card); }
@@ -217,13 +217,45 @@
     <div class="pub"><div class="pub-year">2025</div><div class="pub-body"><h3><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=s1DBffEAAAAJ&amp;citation_for_view=s1DBffEAAAAJ:u5HHmVD_uO8C">Curiosity Exploration Styles in Word Association Tasks</a></h3><div class="pub-authors">S. Steinle, M. Duong, S. Kumar, R. El Brouzi, J. Licato</div><div class="pub-venue">Proceedings of the Annual Meeting of the Cognitive Science Society, 47</div><span class="tag">Conference</span></div></div>
   </section>
 
-  <section id="sketches">
+  <section id="projects">
     <div class="section-head">
-      <h2>sketches</h2>
+      <h2>projects</h2>
       <span class="section-note">selected work</span>
     </div>
-    <p class="sketch-help">A collection of sketches and studies.</p>
 
+    <div class="project-grid">
+      <!-- EASY EDIT: Duplicate a .project block to add more projects. -->
+      <article class="project">
+        <h3>Data-Efficient Fine-Tuning</h3>
+        <p>Exploring data subset selection and coreset optimization for more data-efficient model fine-tuning.</p>
+        <div class="chips">
+          <span class="chip">Data-Centric ML</span>
+          <span class="chip">Subset Selection</span>
+          <span class="chip">Coresets</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>Constrained Clustering</h3>
+        <p>Studying optimization methods for constrained clustering and related data selection problems.</p>
+        <div class="chips">
+          <span class="chip">Optimization</span>
+          <span class="chip">Clustering</span>
+          <span class="chip">Machine Learning</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <div class="section-head">
+      <h2>hobbies</h2>
+      <span class="section-note">outside research</span>
+    </div>
+
+    <p class="sketch-help">I enjoy sketching in my free time. Here are a few selected pieces.</p>
+
+    <!-- The existing sketch gallery now lives under Hobbies. -->
     <div class="sketch-grid" id="sketchGrid"></div>
     <noscript><p class="sketch-help">Enable JavaScript or open this page with Live Server to view the sketch gallery.</p></noscript>
   </section>
@@ -240,7 +272,7 @@
 
 <script>
   // ============================================================
-  // EASY EDIT — SKETCH GALLERY
+  // EASY EDIT — HOBBIES / SKETCH GALLERY
   // 1. Put each image in the "images" folder beside index.html.
   // 2. Add one line below with its exact filename and caption.
   // 3. Open the page with Live Server or in a normal browser.
